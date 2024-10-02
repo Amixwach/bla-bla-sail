@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la aventura con Bla Bla Sail. Ofrecemos servicios de navegación y experiencias inolvidables en el mar.">
+    <title>Descubrí la Aventura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="IMAGES/Boat-favicon.webp">
+    <link rel="stylesheet" href="CSS/estilo2.css">
+</head>
+
+<body>
+    <!-- el logo y el menu debrian ir en "siempre visible" aunque el ususario scrollee pero no se como se hace" -->
+    <header>
+        <!-- logo de la empres -->
+        <img  src="IMAGES/logo bla bla sail.jpg" alt="logo" class="logo-header" width="70">
+        <h1> <span>welcome to</span><br>Bla Bla Sail</h1>
+        
+        <!-- aca comienza el menú de navegacion -->
+        <div class="contenedor-menu"> 
+            <nav class="menu">
+                <ul>       
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#servicios">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact us</a></li>    
+                </ul>        
+            </nav>
+        </div>
+        <!-- aca finaliza el menu de navegacion -->
+    </header>
+    
+    <section  class="about" id="about">
+        <div class="about-texto">
+            <h2> About Us </h2>
+            <p> Discover adventure with Bla Bla Sail. We offer sailing services and
+                unforgettable experiences. <br><br>
+                Two friends with a common passion: the sea. We are dedicated to create a unique experience, where adventure and relax are perfectly combined. We offer sailing trips in the beautiful coves of Sardinia, a dreamed place where nature unfolds in all its splendor. <br><br>
+                On our services, you can enjoy the tranquility of the sea, swim in crystal clear waters, visit the best hidden islands and witness spectacular sunsets from the deck. We make sure that every outing is an opportunity to disconnect, relax, have fun and enjoy an unforgettable experience.</p>
+        </div>    
+        
+        <div class="about-img">
+            <img src="IMAGES/img-about-blablasail.jpg" alt="imagen velero"> 
+        </div>
+    </section>    
+
+    <section  class="servicios" id="servicios">
+            <h2> Services </h2>
+            <img src="IMAGES/icon-sunset.png" alt="imagen sunset" >
+            <h3>Sunset trips</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad ex excepturi doloremque quidem, aliquam, labore nostrum neque iure optio accusantium! Omnis, nihil laboriosam esse ut laudantium, consequuntur magni perferendis iste temporibus distinctio et. </p>
+
+            <img src="IMAGES/icon-swim.png" alt="imagen olas">
+            <h3>Sunset trips</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad ex excepturi doloremque quidem, aliquam, labore nostrum neque iure optio accusantium! Omnis, nihil laboriosam esse ut laudantium, consequuntur magni perferendis iste temporibus distinctio et. </p>
+
+            <img src="IMAGES/icon-yoga.png" alt="imagen yoga">
+            <h3>Yoga trips</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad ex excepturi doloremque quidem, aliquam, labore nostrum neque iure optio accusantium! Omnis, nihil laboriosam esse ut laudantium, consequuntur magni perferendis iste temporibus distinctio et. </p><br>
+
+            <a id= "booknow" href="https://www.instagram.com/blabla.sail?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"> BOOK NOW </a><br><br>
+    </section>
+
+    <!-- <section id="gallery">
+            <h2> Gallery</h2> <br>
+                <div class="gallery">
+                    <img src="IMAGES/GALLERY/FotosBarco1.jpg" alt="imagen barco"> 
+                    <img src="IMAGES/GALLERY/FotosBarco2.jpg" alt="imagen barco"> 
+                    <img src="IMAGES/GALLERY/FotosBarco3.jpg" alt="imagen barco"> 
+                    <img src="IMAGES/GALLERY/FotosBarco4.jpg" alt="imagen barco"> 
+                </div>
+            </section> -->
+
+            <section id="gallery">
+                <h2> Gallery</h2> <br>
+                    <div class="gallery">
+                        <a href="IMAGES/GALLERY/FotosBarco1.jpg" target="_blank">
+                            <img src="IMAGES/GALLERY/FotosBarco1.jpg" alt="imagen barco"></a>
+                        <a href="IMAGES/GALLERY/FotosBarco2.jpg" target="_blank">
+                            <img src="IMAGES/GALLERY/FotosBarco2.jpg" alt="imagen barco"></a>
+                        <a href="IMAGES/GALLERY/FotosBarco3.jpg" target="_blank">
+                            <img src="IMAGES/GALLERY/FotosBarco3.jpg" alt="imagen barco"></a>
+                        <a href="IMAGES/GALLERY/FotosBarco4.jpg" target="_blank">
+                            <img src="IMAGES/GALLERY/FotosBarco4.jpg" alt="imagen barco"></a>
+                    </div>
+                </section>
+
+
+
+
+
+                <!-- Imagen como enlace -->
+
+
+    <section class="contact" id="contact">
+        <h2> Contact Us </h2>
+            <form class="formulario-de-contacto">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="Nombre" placeholder="nombre" required> <br>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="Telefono" placeholder="teléfono" required> <br>
+
+                <label for="comentarios">¿Algún comentario adicional?</label> 
+                <textarea id="comentarios" name="Comentarios"></textarea><br>
+
+                <button type="reset"> Limpiar </button> <button type="submit"> Enviar </button> <br>
+                
+            </form>
+            
+        </section> 
+
+
+    <footer>
+
+        <div class="footer-text">        
+            <a href="#top"> Volver a Inicio </a><br>
+            <a href="https://www.instagram.com/blabla.sail?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"> Seguinos en Instagram </a><br>
+            <a href="https://walink.co/9f6f15"> Escribinos por WhatsApp </a><br>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3622.498420690016!2d9.334628445260801!3d41.18964014389634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1726967644343!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p >Copyright 2024 - Aguante Ami</p>
+
+    </footer>        
+
+</body>
+
+
+</html>

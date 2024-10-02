@@ -1,0 +1,235 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* ESTILO PARA EL HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(74, 197, 197);
+    padding: 10px 20px;
+    }
+
+.logo-header {
+    border-radius: 50%;
+    }
+
+h1 {
+    font-size: 1.8rem;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+}
+h1 span {
+    font-size: 1rem;
+    color: white;   
+}
+
+/* ESTILO PARA EL MENU DE NAVEGACION */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    }
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* ESTILO PARA TODAS LAS SECCIONES */
+section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ESTILO PARA EL ABOUT*/
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img img {  
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    /* display: inline; */
+}
+
+.about-texto {
+    text-align: center;
+    display: inline;
+}
+
+
+/* ESTILO PARA LA SECCION SERVICIOS */
+.servicios {
+    text-align: center;
+}
+
+.servicios img {
+    width: 100%;
+    max-width: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 1px;
+}
+
+
+#booknow {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px;
+    margin: 2px;
+    background-color: rgb(74, 197, 197);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#booknow:hover {
+    background-color: darkcyan;
+}
+
+/* ESTILO PARA SECCION GALERIA */
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+a:hover img {
+    transform: scale(1.01); 
+}
+
+/* ESTILO PARA EL FORM DE CONTACTO */
+form {
+    display: flex;
+    flex-direction:column;
+}
+
+form input, form textarea {
+    margin: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    margin: 2px;
+    background-color: rgb(74, 197, 197);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkcyan;
+}
+
+
+/* ESTILO PARA EL FOOTER*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:darkcyan;
+    color: white;
+    flex-direction: row;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    line-height: 1.7;
+        }
+
+footer a:hover {
+    color: #ddd;
+}
+
+footer p {
+    font-size: small;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+
+
+
+/* ESTILOS DE LAS MEDIA QUERYS TABLET Y PC !!!!! */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-texto {
+        text-align: left;
+        margin-right: 15px;
+        max-width: 900px;
+    }
+
+    .about-img img {  
+        width: 250PX;
+    }
+/* ¿como lograr que los elementos del forms tengan un ancho maximo pero, a la vez, sigan estando centrados? */
+
+    iframe {
+        width: 380px;
+        height: 380px;
+    }
+
+}
