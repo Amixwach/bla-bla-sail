@@ -4,9 +4,6 @@
     padding: 0;
 }
 
-
-/* PENDIENTE: MUY IMPORTANTE: agregar media queris para pantallas más anchas, en el monitor grande se ve mal */
-
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
@@ -14,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f3f3f3;
 }
 
 /* ESTILO PARA EL HEADER */
@@ -156,6 +153,8 @@ section {
 .formulario-de-contacto {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
 }
 
 .formulario-de-contacto input, form textarea {
@@ -187,6 +186,10 @@ footer {
     color: white;
 }
 
+.footer-text {
+    margin: 10px 0px 20px 0px;
+}
+
 footer a {
     text-decoration: none;
     color: white;
@@ -208,7 +211,8 @@ iframe {
 /* ESTILOS DE LAS MEDIA QUERYS*/
 
     /* PARA TABLETS Y LAPTOPS PEQUEÑAS: */
-@media (min-width: 768px) and (max-width: 1400px){ 
+@media (min-width: 768px) /*and (max-width: 1400px) */{ 
+    
     /*header {
         flex-direction: row;
         justify-content: space-between;
@@ -244,6 +248,7 @@ iframe {
 
     .tarjeta-servicio {
         max-width: 25rem;
+        margin: 15px;
     }
 
     #boton-booknow {
@@ -261,19 +266,36 @@ iframe {
         max-width: 600px; 
         margin: 10px; 
         border-radius: 0.3125rem; 
-        margin: 10px; 
     }
     
-
-
-
-
-
-
-
+    .formulario-de-contacto {
+        flex-wrap: wrap;
+    }
+    .formulario-de-contacto input, textarea {
+        width: 500px;
+    }
 
     iframe {
         width: 23.75rem; /* 380px */
         height: 23.75rem; /* 380px */
     }
+}
+
+
+/*PARA MONITORES GRANDES Y PC DE ESCRITORIO */
+@media (min-width: 1401px){
+.about-texto {
+    text-align: left;
+    margin-right: 1rem; 
+    max-width: 85rem; 
+}
+
+.gallery img {
+    max-width: 800px; 
+    margin: 15px; 
+}
+
+
+
+
 }
