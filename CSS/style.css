@@ -1,0 +1,279 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* PENDIENTE: MUY IMPORTANTE: agregar media queris para pantallas más anchas, en el monitor grande se ve mal */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 1rem; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* ESTILO PARA EL HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(74, 197, 197);
+    padding: 0.75rem 1.5rem; 
+}
+
+.logo-header {
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.8rem; 
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 1rem; 
+    /* color: white; */
+}
+
+
+/* ESTILO PARA EL MENU DE NAVEGACION */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+
+/* ESTILO PARA TODAS LAS SECCIONES */
+section {
+    text-align: center;
+    padding: 1.25rem; 
+    margin: 1.25rem 0; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.75rem; 
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.25); 
+}
+
+/* ESTILO PARA EL ABOUT */
+.about {
+    display: flex;
+    flex-direction: column;
+    /*esas 2 cosas la tengo que ajustar para laptops y para pc de escritorio*/
+}
+
+
+.about-img img {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 0.75rem; 
+    margin: 0.75rem;
+}
+
+
+.about-texto {
+    text-align: center;
+    display: inline;
+}
+
+
+/* ESTILO PARA LA SECCION SERVICIOS */
+.servicios {
+    text-align: center;
+}
+
+.servicios img {
+    width: 100%;
+    max-width: 3.125rem; 
+    border-radius: 0.65rem; 
+    margin: 0.65rem; 
+    margin-bottom: 0.065rem; 
+}
+
+.servicios p {
+    margin-bottom: 15px;
+}
+
+#boton-booknow {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem;
+    margin: 0.125rem; 
+    background-color: rgb(74, 197, 197);
+    color: white;
+    border-radius: 10px ;    
+    cursor: pointer;
+}
+
+#boton-booknow:hover {
+    background-color: darkcyan;
+}
+
+
+/* ESTILO PARA SECCION GALERIA - una foto debajo de la otra*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+    margin: 2px 0; 
+}
+
+.gallery img:hover {
+    transform: scale(1.05); 
+}
+
+
+
+/* ESTILO PARA EL FORM DE CONTACTO */
+.formulario-de-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-de-contacto input, form textarea {
+    margin: 0.15rem; 
+    padding: 0.75rem; 
+    border-radius: 0.3rem; 
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 0.75rem;
+    margin: 0.2rem; 
+    background-color: rgb(74, 197, 197);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkcyan;
+}
+
+/* ESTILO PARA EL FOOTER */
+footer {
+    text-align: center;
+    padding: 0.75rem; 
+    background-color: darkcyan;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    line-height: 1.75;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+footer p {
+    font-size: small;
+}
+
+iframe {
+    border-radius: 0.3rem;
+}
+
+/* ESTILOS DE LAS MEDIA QUERYS*/
+
+    /* PARA TABLETS Y LAPTOPS PEQUEÑAS: */
+@media (min-width: 768px) and (max-width: 1400px){ 
+    /*header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.625rem 1.25rem; 
+    }*/
+    
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 1.25rem; 
+    }
+
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-texto {
+        text-align: left;
+        margin-right: 1rem; 
+        max-width: 65rem; 
+    }
+
+    .about-img img {
+        width: 17rem; 
+    }
+
+    .conjunto-tarjetas-servicios {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tarjeta-servicio {
+        max-width: 25rem;
+    }
+
+    #boton-booknow {
+        font-size: 1.15rem;
+        padding: 1.1rem;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .gallery img {
+        max-width: 600px; 
+        margin: 10px; 
+        border-radius: 0.3125rem; 
+        margin: 10px; 
+    }
+    
+
+
+
+
+
+
+
+
+    iframe {
+        width: 23.75rem; /* 380px */
+        height: 23.75rem; /* 380px */
+    }
+}

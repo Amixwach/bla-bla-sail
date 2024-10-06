@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+/* PENDIENTE: MUY IMPORTANTE: agregar media queris para pantallas MAS anchas, en el monitor grande se ve mal*/
+
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
@@ -225,7 +227,14 @@ iframe {
     .about-img img {  
         width: 250PX;
     }
-/* ¿como lograr que los elementos del forms tengan un ancho maximo pero, a la vez, sigan estando centrados? */
+
+
+
+    /* --------------------------
+    
+    ¿como lograr que los elementos del forms tengan un ancho maximo pero, a la vez, sigan estando centrados? 
+    
+    -----------------------------*/
 
     iframe {
         width: 380px;
