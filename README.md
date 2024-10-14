@@ -4,3 +4,8 @@ Los usuarios pueden conocer sobre la empresa, los servicio que brinda y ver foto
 Ademas, pueden ponerse en contacto a traves de un formulario.
 Esto es todo hasta ahora, espero aprender cosas nuevas para avanzar.
 
+Cosas que quiero hacer cuando aprenda JavaSript:
+    -menú de hamburguesa para dispositivos moviles
+    -carrousel para la galeria
+    -newsletter (?)
+

@@ -1,4 +1,5 @@
 /* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +9,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     font-size: 1rem; 
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #333;
     background-color: #f3f3f3;
 }
 
@@ -76,7 +77,13 @@ section {
 .about {
     display: flex;
     flex-direction: column;
-    /*esas 2 cosas la tengo que ajustar para laptops y para pc de escritorio*/
+    border-radius: 0;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    box-shadow: 0;
+    padding: 0;
+    padding-bottom: 1.25rem;
+    /*media queris: esas cosas la tengo que ajustar para laptops y para pc de escritorio*/
 }
 
 
