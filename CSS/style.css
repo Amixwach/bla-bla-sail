@@ -37,7 +37,6 @@ h1 {
 
 h1 span {
     font-size: 1rem; 
-    /* color: white; */
 }
 
 
@@ -87,17 +86,23 @@ section {
 }
 
 
-.about-img img {
+
+/* .about-img img {
     width: 100%;
     max-width: 20rem;
     border-radius: 0.75rem; 
     margin: 0.75rem;
-}
+} */        /* por ahora saque la imagen y la cambie por un video */
 
 
 .about-texto {
     text-align: center;
     display: inline;
+    padding: 15px;
+}
+
+.about h2 {
+    margin: 8px;
 }
 
 
@@ -185,6 +190,8 @@ form button:hover {
     background-color: darkcyan;
 }
 
+
+
 /* ESTILO PARA EL FOOTER */
 footer {
     text-align: center;
@@ -194,13 +201,19 @@ footer {
 }
 
 .footer-text {
-    margin: 10px 0px 20px 0px;
+    margin: 10px;
 }
 
+.footer-iconos {
+    display: inline;
+
+
+}
 footer a {
     text-decoration: none;
     color: white;
     line-height: 1.75;
+    margin: 5px;
 }
 
 footer a:hover {
@@ -220,20 +233,15 @@ iframe {
     /* PARA TABLETS Y LAPTOPS PEQUEÑAS: */
 @media (min-width: 768px) /*and (max-width: 1400px) */{ 
     
-    /*header {
+header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0.625rem 1.25rem; 
-    }*/
-    
-
-    nav ul {
-        justify-content: flex-end;
-        flex-direction: row;
-        gap: 1.25rem; 
+        padding: 1.5rem; 
     }
 
+
     .about {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -291,12 +299,31 @@ iframe {
 
 /*PARA MONITORES GRANDES Y PC DE ESCRITORIO */
 @media (min-width: 1401px){
+    h1{
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
+    h1 span {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 1.25rem; 
+        font-size: 1.7rem;
+    }
+    
 .about-texto {
     text-align: left;
     margin-right: 1rem; 
-    max-width: 85rem; 
+    max-width: 75rem; 
 }
 
+.about-video {
+    max-width: 35rem; 
+}
 .gallery img {
     max-width: 800px; 
     margin: 15px; 
